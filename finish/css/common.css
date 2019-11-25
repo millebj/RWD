@@ -1,0 +1,219 @@
+/* All Device */
+
+.container {
+ display: flex;
+ flex-flow: row wrap;
+}
+
+.apHeader, .appNavigation, .appMain, .appFooter {
+ width: 100%;
+}
+
+/* 공통 헤더 */
+
+.appHeader {
+ padding-bottom: 1em;
+ display: flex;
+ flex-flow: row wrap;
+}
+
+.brand, .memberOnly, .search {
+ width: 100%;
+}
+
+/* 공통 멤버링크 */
+
+.memberOnly {
+ order: -1;
+ margin: 0;
+ list-style: none;
+ padding: 0;
+ display: flex;
+ justify-content: flex-end;
+ padding: 2px 0;
+}
+
+.memberOnly a {
+ display: inline-block;
+ padding: 0.5em 0;
+}
+
+/* 공통 검색 */
+
+.search {
+ order: 1;
+}
+
+input[type="search"], .buttonSearch {
+ vertical-align: top;
+}
+
+input[type="search"] {
+ border: 1px solid #aaa;
+ border-radius: 5px;
+ padding: 2px 5px;
+ height: 3rem;
+}
+
+input[type="search"]:focus::-webkit-input-placeholder {
+ /* Chrome/Opera/Safari */
+ color: transparent;
+}
+
+input[type="search"]:focus::-moz-placeholder {
+ /* Firefox 19+ */
+ color: transparent;
+}
+
+input[type="search"]:focus:-ms-input-placeholder {
+ /* IE 10+ */
+ color: transparent;
+}
+
+input[type="search"]:focus:-moz-placeholder {
+ /* Firefox 18- */
+ color: transparent;
+}
+
+/* 공통 메인 */
+
+.appMain {
+ display: flex;
+ flex-flow: row wrap;
+}
+
+.book, .news, .board, .favorite, .twitter {
+ width: 100%;
+}
+
+.appMain [class*="title"] {
+ font-weight: 700;
+ font-size: 1.8rem;
+}
+
+.appMain [class*="enTitle"] {
+ display: block;
+}
+
+.appMain [class*="summary"] {
+ line-height: 1.5;
+}
+
+/* 공통 추천서적 */
+
+.book__cover {
+ text-align: center;
+ font-weight: 400;
+}
+
+.book__info {
+ text-align: center;
+}
+
+.book__info * {
+ margin: 0;
+ display: inline;
+}
+
+.book__info [aria-label] {
+ display: block;
+ font-size: 2.5rem;
+}
+
+/* 공통 새소식 */
+
+.news__date, .twitter__date {
+ display: block;
+ text-align: right;
+}
+
+/* 공통 게시판 */
+
+.board {
+ position: relative;
+}
+
+.board__list {
+ list-style: none;
+ padding-left: 1em;
+}
+
+.board__list li {
+ margin-top: 0.5em;
+ display: flex;
+ align-items: center;
+}
+
+.board__list li> :nth-child(1) {
+ flex: 1 0 0;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}
+
+.board__more {
+ position: absolute;
+ top: 1em;
+ right: 0;
+}
+
+/* 공통 인기 사이트 */
+
+.favorite__list {
+ list-style-type: none;
+ padding-left: 1.5em;
+ counter-reset: number;
+}
+
+.favorite__list li {
+ counter-increment: number;
+ margin-top: 1em;
+}
+
+.favorite__list li::before {
+ content: counter(number);
+ background: #eea60a;
+ color: #fff;
+ padding: 0 0.5em;
+ border-radius: 50%;
+ margin-right: 0.5em;
+}
+
+/* 공통 트위터 */
+
+.twitter__user {
+ position: relative;
+ padding-right: calc(20% + 1.5em);
+}
+
+.twitter__userName, .twitter__userId {
+ display: inline;
+ margin-left: 0;
+}
+
+.twitter__userProfile {
+ position: absolute;
+ top: 0;
+ right: 0;
+ margin: 0;
+ width: 20%;
+}
+
+.twitterUserProfile img {
+ margin-left: auto;
+}
+
+/* 공통 푸터 */
+
+.appFooter {
+ color: #fff;
+ padding: 1.5em 1em;
+ background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+ background-color: #282828;
+ background-size: 16px 16px;
+}
+
+.address {
+ font-style: normal;
+ margin-bottom: 1em;
+}

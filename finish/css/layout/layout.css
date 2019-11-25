@@ -1,0 +1,20 @@
+.container {
+ display: flex;
+ flex-flow: row wrap;
+}
+
+.appHeader, .appNavigation, .appMain, .appFooter {
+ width: 100%;
+}
+
+/* 공통 헤더 */
+
+.appHeader {
+ padding-bottom: 1em;
+ display: flex;
+ flex-flow: row wrap;
+}
+
+.brand, .memberOnly, .searchForm {
+ width: 100%;
+}
