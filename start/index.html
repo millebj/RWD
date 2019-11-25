@@ -13,7 +13,25 @@
 <!-- <link rel="stylesheet" href="./css/layout/mobile.css"> -->
 <body>
   <div class="container">
-    <header class="appHeader">헤더</header>
+    <header class="appHeader">
+      <h1 class="brand">
+        <a href="./index.html">
+          <img src="./images/rwd-logo.png" alt="Web Cafe">
+        </a>
+      </h1>
+      <ul class="memberOnly">
+        <li><a href="/">로그인</a></li>
+        <li><span aria-hidden="true"> | </span><a href="/">회원가입</a></li>
+        <li><span aria-hidden="true"> | </span><a href="/">커뮤니티</a></li>
+      </ul>
+      <form action="서버주소" method="POST" class="searchForm">
+        <fieldset>
+          <legend>검색</legend>
+          <input type="search" required placeholder="검색어를 입력하세요." name="search" aria-label="검색어">
+          <button type="submit" class="button buttonSearch">검색</button>
+        </fieldset>
+      </form>
+    </header>
     <nav class="appNavigation">내비게이션</nav>
     <main class="appMain">
       <section class="book">추천서적</section>
