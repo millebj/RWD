@@ -3,3 +3,21 @@
 body{
   font-size: 1.6rem;
 }
+
+.container{
+  flex-flow: row wrap;
+}
+
+.appHeader, .appMain, .appFooter{
+  width: 100%;
+}
+
+.appNavigation{
+  width: 70%;
+}
+.appMain{
+  flex-flow: row wrap;
+}
+.book, .news, .board, .favorite, .twitter{
+  width: 100%;
+}

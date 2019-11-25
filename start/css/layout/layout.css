@@ -2,6 +2,7 @@
 
 .container{
   background-color: silver;
+  display: flex;
 }
 
 /* header */
@@ -20,6 +21,7 @@
 .appMain{
   background: blue;
   height: 50vh;
+  display: flex;
 }
 /* book */
 .book{
