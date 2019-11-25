@@ -1,1 +1,49 @@
 /* Common Layout */
+
+.container{
+  background-color: silver;
+}
+
+/* header */
+.appHeader{
+  background: yellow;
+  height: 15vh;
+}
+
+/* navigation */
+.appNavigation{
+  background: orange;
+  height: 20vh;
+}
+
+/* main */
+.appMain{
+  background: blue;
+  height: 50vh;
+}
+/* book */
+.book{
+  background-color: pink;
+}
+/* news */
+.news{
+  background-color: tan;
+}
+/* board */
+.board{
+  background-color: teal;
+}
+/* favorite */
+.favorite{
+  background-color: tomato;
+}
+/* twitter */
+.twitter{
+  background-color: aqua;
+}
+
+/* footer */
+.appFooter{
+  background: lime;
+  height: 15vh;
+}
