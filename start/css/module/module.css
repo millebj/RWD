@@ -8,3 +8,12 @@
   font-size: 1em;
   cursor: pointer;
 }
+.buttonNone{
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.round{
+  border-radius: 15px;
+}

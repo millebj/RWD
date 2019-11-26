@@ -42,7 +42,7 @@ body{
 .searchForm{
   text-align: right;
 }
-[type="search"], .bottonSearch{
+[type="search"], .buttonSearch{
   vertical-align: middle;
 }
 [type="search"]{
