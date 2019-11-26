@@ -1,1 +1,8 @@
 /* All Device CSS */
+/* 검색 폼 */
+[type="search"]{
+  border: 1px solid #333;
+  padding: 0.2em 0.25em 0.3em 1em;
+  height: 35px;
+  border-radius: 3px;
+}

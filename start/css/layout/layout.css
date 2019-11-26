@@ -1,13 +1,22 @@
 /* Common Layout */
+/* 기본 box-siizng 설정 */
+*, *::before, *::after{
+  box-sizing: border-box;
+}
 
 .container{
   background-color: silver;
   display: flex;
 }
 
-/* header */
-.appHeader{
-  background: yellow;
+/* 멤버 서비스 */
+.memberOnly{
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.memberOnly li{
+  display: inline-block;
+  font-size: 0.5em 1ems;
 }
 
 /* navigation */

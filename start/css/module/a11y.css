@@ -1,2 +1,10 @@
 /* Common Hidden Content */
 
+legend{
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  clip: rect(0,0,0,0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+}

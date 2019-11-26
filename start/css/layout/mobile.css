@@ -12,6 +12,63 @@ body{
   width: 100%;
 }
 
+/* 헤더 */
+.appHeader{
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 1em;
+  background-color: #38302e;
+}
+.brand, .memberOnly, .searchForm{
+  width: 100%;
+}
+.brand, .searchForm{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* 로고 */
+.brand{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+/* 멤버 서비스 */
+.memberOnly{
+  order: -1;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  padding-left: 20px;
+  padding-right: 5px;
+  background-color: #988574;
+  color: #fff;
+}
+
+/* 검색 폼 */
+[type="search"]{
+  width: calc(100% - 50px);
+  margin-right: 10px;
+}
+.buttonSearch{
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 35px;
+  height: 35px;
+  color: white;
+  position: relative;
+}
+.buttonSearch::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./../images/btn_search.png") no-repeat;
+  background-size: 100% 100%;
+}
+
 .appNavigation{
   width: 70%;
 }

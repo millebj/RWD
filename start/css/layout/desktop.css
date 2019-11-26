@@ -11,6 +11,50 @@ body{
 .appHeader, .appMain{
   width: 1000px;
 }
+
+/* 헤더 */
+.appHeader{
+  position: relative;
+  padding-bottom: 1em;
+  min-height: 60px;
+}
+
+/* 로고 */
+.brand{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -30px;
+}
+
+/* 멤버 서비스 */
+.memberOnly{
+  text-align: right;
+  font-size: 0;
+  position: relative;
+  margin-right: -14px;
+}
+.memberOnly a{
+  display: inline-block;
+  padding: 0.5em 1em;
+}
+
+/* 검색 폼 */
+.searchForm{
+  text-align: right;
+}
+[type="search"], .bottonSearch{
+  vertical-align: middle;
+}
+[type="search"]{
+  width: 400px;
+}
+.buttonSearch{
+  background-color: #988574;
+  color: white;
+  height: 35px;
+}
+
 .appNavigation, .appFooter{
   width: 100%;
 }

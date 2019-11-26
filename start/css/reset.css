@@ -1,60 +1,15 @@
 /* Reset CSS Style */
 
-/* 모든 요소의 기본 box-sizing 선언 */
-
-*, *::before, *::after {
- box-sizing: border-box;
+.resetMargin{
+  margin: 0;
 }
-
-/* 링크 스타일 */
-
-a {
- text-decoration: none;
- color: inherit;
+.resetList{
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
 }
-
-/* 목록 기본 스타일 */
-
-ul, ol {
- list-style: none;
- padding-left: 0;
-}
-
-/* 정의형 목록 스타일 */
-
-dd {
- margin: 0;
-}
-
-/* figure 좌우 여백 초기화 및 정렬 */
-
-figure {
- margin-left: 0;
- margin-right: 0;
- text-align: center;
-}
-
-/* fieleset 스타일 초기화 */
-
-fieldset {
- border: 0;
- margin: 0;
- padding: 0;
-}
-
-/* 테이블 스타일 */
-
-table {
- border-collapse: collapse;
- border-spacing: 0;
-}
-
-/* address 요소 및 small 요소 스타일  */
-
-address {
- font-style: normal;
-}
-
-small {
- font-size: 1em;
+.resetBox{
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
