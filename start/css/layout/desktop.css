@@ -8,7 +8,7 @@ body{
   flex-flow: column nowrap;
   align-items: center;
 }
-.appHeader, .appMain{
+.appHeader, .menu__list, .appMain{
   width: 1000px;
 }
 
@@ -31,12 +31,11 @@ body{
 .memberOnly{
   text-align: right;
   font-size: 0;
-  position: relative;
   margin-right: -14px;
 }
-.memberOnly a{
+.memberOnly li{
   display: inline-block;
-  padding: 0.5em 1em;
+  font-size: 1.4rem;
 }
 
 /* 검색 폼 */
@@ -60,8 +59,40 @@ body{
 }
 
 /* 메인 메뉴 */
+.menu{
+  background-color: #988574;
+}
 .buttonBurger{
   display: none;
+}
+.menu__list{
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  padding: 1em;
+  color: white;
+}
+.menu__list > li{
+  float: left;
+  margin: 0 30px;
+}
+.menu__link{
+  cursor: default;
+  text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+}
+.menu__link:hover, .menu__link:focus{
+  color: inherit;
+}
+.menu__subMenu{
+  padding-left: 1.5em;
+}
+.menu__subMenu a{
+  display: block;
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+.menu__subMenu a:hover, .menu__subMenu a:focus{
+  color: #ff0;
 }
 
 .appMain{
