@@ -58,6 +58,12 @@ body{
 .appNavigation, .appFooter{
   width: 100%;
 }
+
+/* 메인 메뉴 */
+.buttonBurger{
+  display: none;
+}
+
 .appMain{
   flex-flow: row wrap;
   justify-content: space-between;

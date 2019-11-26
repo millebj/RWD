@@ -1,6 +1,6 @@
 /* Common Hidden Content */
 
-legend{
+legend, .a11yHidden{
   position: absolute;
   overflow: hidden;
   width: 1px;
