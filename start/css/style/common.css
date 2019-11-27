@@ -103,6 +103,43 @@
   padding: 1em;
 }
 
+/* 인기 사이트 */
+.favorite__list{
+  list-style-type: none;
+}
+.favorite__list li{
+  margin-top: 0.5em;
+  counter-increment: number;
+}
+.favorite__list li::before{
+  display: inline-block;
+  content: counter(number);
+  background-color: #eea60a;
+  color: #fff;
+  padding: 0.5em 1em 0.75em;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+.favorite__list a{
+  display: inline-block;
+  padding: 0.5em 0;
+  position: relative;
+}
+.favorite__list a:hover::after{
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 80%;
+  left: 60%;
+  white-space: nowrap;
+  background-color: #eea60a;
+  color: #fff;
+  padding: 0.5em 1em;
+  border: 1px solid #999;
+  border-radius: 3px;
+  box-shadow: 3px 3px 0 0 #333;
+  z-index: 10;
+}
+
 /* footer */
 .appFooter{
   background: lime;

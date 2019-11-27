@@ -109,6 +109,7 @@ body{
   width: 320px;
 }
 .favorite{
+  order: 1;
   width: 240px;
 }
 .twitter{
