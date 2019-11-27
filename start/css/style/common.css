@@ -1,0 +1,78 @@
+/* All Device CSS */
+
+/* 기본 box-siizng 설정 */
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+}
+
+/* 멤버 서비스 */
+.memberOnly{
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.memberOnly a{
+  display: inline-block;
+  padding: 0.5em 1em;
+}
+
+/* main */
+.appMain{
+  display: flex;
+}
+
+/* 검색 폼 */
+[type="search"]{
+  border: 1px solid #333;
+  padding: 0.2em 0.25em 0.3em 1em;
+  height: 35px;
+  border-radius: 3px;
+}
+
+/* 메인 컨텐츠 섹션 공통 */
+.appMain [class*="__title"]{
+  font-size: 1.8rem;
+  padding-top: 0.5em;
+}
+.appMain [class*="__enTitle"]{
+  display: block;
+}
+.appMain [class*="__summary"]{
+  line-height: 1.5;
+}
+
+/* 추천서적 */
+.book__cover{
+  text-align: center;
+}
+.book__cover figcaption{
+  font-size: 1.6rem;
+  margin: 1em 0;
+}
+.book__info{
+  text-align: center;
+}
+.book__info dt, .book__info dd{
+  display: inline-block;
+}
+.book__info dd{
+  margin-left: 0;
+}
+.book__info [aria-label]{
+  display: block;
+  font-size: 2.5rem;
+}
+
+/* 새소식 */
+.news__date{
+  display: block;
+  text-align: right;
+}
+
+/* footer */
+.appFooter{
+  background: lime;
+}

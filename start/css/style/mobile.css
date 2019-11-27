@@ -119,6 +119,7 @@ body{
   background-color: #000;
   color: #fff;
   position: fixed;
+  z-index: 1000;
   top: 0;
   left: 0;
   padding: 2em 1em;

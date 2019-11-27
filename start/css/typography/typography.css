@@ -1,6 +1,6 @@
 /* Web Font - Spoqa Han Sans */
 @import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
-@import url("./../fonts.css");
+@import url("fonts.css");
 
 html{
   font-size: 10px;
