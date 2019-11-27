@@ -72,6 +72,37 @@
   text-align: right;
 }
 
+/* 게시판 */
+.board{
+  position: relative;
+}
+.board__list{
+  list-style-type: none;
+}
+.board__list li{
+  margin-top: 0.5em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.board__list a{
+  padding: 0.5em 0;
+  width: calc(100% - 7em);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.board__list time{
+  margin-left: auto;
+}
+.board__more{
+  position: absolute;
+  top: 0.5em;
+  right: -1em;
+  padding: 1em;
+}
+
 /* footer */
 .appFooter{
   background: lime;
