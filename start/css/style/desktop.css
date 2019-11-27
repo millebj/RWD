@@ -9,7 +9,8 @@ body{
   align-items: center;
 }
 .appHeader, .menu__list, .appMain{
-  width: 1000px;
+  width: 78.125%;
+  max-width: 1800px;
 }
 
 /* 헤더 */
@@ -71,11 +72,14 @@ body{
   overflow: hidden;
   padding: 1em;
   color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
 }
-.menu__list > li{
+/* .menu__list > li{
   float: left;
   margin: 0 30px;
-}
+} */
 .menu__link{
   cursor: default;
   text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
@@ -100,18 +104,23 @@ body{
   justify-content: space-between;
 }
 .book{
-  width: 320px;
+  width: 32%;
 }
 .news{
-  width: 660px;
+  width: 66%;
 }
 .board{
-  width: 320px;
+  width: 32%;
 }
 .favorite{
   order: 1;
-  width: 240px;
+  width: 24%;
 }
 .twitter{
-  width: 400px;
+  width: 40%;
+}
+
+/* 푸터 */
+.appFooter{
+  text-align: center;
 }
